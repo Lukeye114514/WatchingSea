@@ -1,0 +1,23 @@
+#pic1{
+    position: fixed;
+    left: 400px;
+    top:200px;
+    /*width: 50%;*/
+
+}
+#pic2 {
+    position: fixed;
+    top:200px;
+    float:left;
+    /*width: 50%;*/
+}
+#pic2:hover{
+    cursor: auto;
+    transform:scale(1.5,1.5);
+    transition: 2s;
+}
+#背景{
+    display: block;
+    width: 10%;
+
+}

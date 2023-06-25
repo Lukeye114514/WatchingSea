@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url("/jpg/三人看海.png") no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+#love ul{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width:1200px;
+    margin:30px auto;
+}
+#love ul li{
+    list-style: none;
+    width: 24%;
+}
+#love ul li img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+#love ul li p{
+    padding-top: 10px;
+    font-weight: bold;
+    color: #888888;
+}
+#love ul li h1{
+    color: #888888;
+    margin-left: 100px;
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 600px;
+    margin:20px auto;
+}
+
+
+.about-text p{
+    margin-top: 0;
+    position: relative;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin-left: 50px;
+    font-size: 25px;
+color: black}
+#sp {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 600px;
+    margin:20px auto;
+}
+.sp-text h1{
+    position: relative;
+    margin-top: 0;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin-left: 50px;
+    font-size: 25px;
+    color:black}
+.banner{
+    width: 100%;
+    height: 20vh;}
+.banner-img{
+position: absolute;
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+.banner-text p{
+position: relative;
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight:bolder;
+    font-family: 微軟正黑體;
+    padding-left: 30%;
+    color: #333333;
+
+
+}
+
+

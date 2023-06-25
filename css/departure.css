@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+body{
+	background-color: #C8D0D3;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  background-color:#7994B4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 800;
+}
+.navbar li a:hover {
+  color: #42372d;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #f4f4f4;
+
+  /* 放在子元素上，和上面那个父元素一伙的 */
+  scroll-snap-align: center;
+}
+
+
+.shell{
+    align-items: center;
+	width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    float:none;
+    display: flex;
+	justify-content: center;
+	
+}
+.images{
+    width: 600%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+	align-content: center;
+    transition: 0.3s;
+}
+.img{
+    width: 100%;
+    background-size: cover;
+}
+.img:nth-child(1){
+    background-image: url("../img/giant1.png");
+}
+.img:nth-child(2){
+    background-image: url("../img/giant2.png");
+}
+.img:nth-child(3){
+    background-image: url("../img/kancolle1.jpg");
+}
+.img:nth-child(4){
+    background-image: url("../img/kancolle2.jpg");
+}
+.img:nth-child(5){
+    background-image: url("../img/re.png");
+}
+.img:nth-child(6){
+    background-image: url("../img/re2.png");
+}
+.min-box{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 100;
+}
+.min{
+    width: 20px;
+    height: 10px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: -20px 0;
+    opacity: .5;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.button-left,.button-right{
+	font-size: 50px;
+	/* [disabled]padding-top: 0; */
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 0;
+	cursor: pointer;
+	line-height: 405px;
+}
+
+.portal{
+	position: absolute;
+	right: 220px;
+	top: 100px;
+	
+}
+.portal:after,
+.portal:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.portal:after {
+    border-right-color: transparent;
+}
+
+.portal:before {
+    border-left-color: transparent;
+}
+
+.portal a:link,
+.portal a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.portal span {
+    background: #999057;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.portal a:hover span {
+    background: #E8D0C4;
+    margin-top: 0;
+}
+
+.portal span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #dcd5cb;
+}
+
+.portal span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #dcd5cb;
+}
+.comment{
+	font-family: Lora, STSong, Open Sans, Arial, serif;
+	position: absolute;
+}

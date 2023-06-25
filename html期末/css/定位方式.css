@@ -1,0 +1,31 @@
+/* 绝对定位 */
+.parent {
+    position: relative;
+}
+.child {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* 相对定位 */
+.relative {
+    position: relative;
+    left: 90px;
+    top: 90px;
+}
+
+/* 固定定位 */
+.fixed {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+/* 浮动定位 */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
